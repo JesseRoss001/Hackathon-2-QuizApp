@@ -1106,6 +1106,157 @@ const questionArray = [
             updateC: "Centaur",
             updateD: "Medusa",
             correctAnswer: "A"
+        },{
+            questionNumber: 113,
+            difficultyScore: 8,
+            questionContent: "If all roses are flowers and some flowers fade quickly, can it be logically assumed that some roses fade quickly?",
+            updateA: "Yes",
+            updateB: "No",
+            updateC: "Cannot be determined",
+            updateD: "None of the above",
+            correctAnswer: "C"
+        },
+        {
+            questionNumber: 114,
+            difficultyScore: 7,
+            questionContent: "Which of the following is an example of a logical contradiction?",
+            updateA: "A square circle",
+            updateB: "A wooden metal",
+            updateC: "A cold fire",
+            updateD: "All of the above",
+            correctAnswer: "D"
+        },
+        {
+            questionNumber: 115,
+            difficultyScore: 7,
+            questionContent: "In a standard logic puzzle, if Albert lives either in the red house or the blue house, and the red house occupant owns a zebra, who owns the zebra?",
+            updateA: "Albert",
+            updateB: "The occupant of the blue house",
+            updateC: "Cannot be determined",
+            updateD: "The occupant of the red house",
+            correctAnswer: "A"
+        },
+        {
+            questionNumber: 116,
+            difficultyScore: 5,
+            questionContent: "If it is true that all dogs bark, and Fido is a dog, what can be logically inferred?",
+            updateA: "Fido barks",
+            updateB: "Fido does not bark",
+            updateC: "Fido is not a dog",
+            updateD: "None of the above",
+            correctAnswer: "A"
+        },
+        {
+            questionNumber: 117,
+            difficultyScore: 9,
+            questionContent: "If it is known that either statement A or statement B is true, but not both, and statement A implies statement C, what can be inferred if statement B is false?",
+            updateA: "Statement C is true",
+            updateB: "Statement C is false",
+            updateC: "Statement A is true",
+            updateD: "Nothing can be inferred",
+            correctAnswer: "A"
+        },
+        {
+            questionNumber: 118,
+            difficultyScore: 9,
+            questionContent: "In logic, what is a 'syllogism'?",
+            updateA: "A kind of argument in which one proposition (the conclusion) is inferred from two others (the premises) of a certain form.",
+            updateB: "A statement that contradicts itself.",
+            updateC: "A false statement.",
+            updateD: "An irrational argument.",
+            correctAnswer: "A"
+        },
+        {
+            questionNumber: 119,
+            difficultyScore: 8,
+            questionContent: "In the statement 'If it rains, the ground will be wet', what is the antecedent?",
+            updateA: "It rains",
+            updateB: "The ground",
+            updateC: "Will be wet",
+            updateD: "The ground will be wet",
+            correctAnswer: "A"
+        },
+        {
+            questionNumber: 120,
+            difficultyScore: 6,
+            questionContent: "What is the term for a statement that can be proven to be true or false?",
+            updateA: "Hypothesis",
+            updateB: "Theory",
+            updateC: "Proposition",
+            updateD: "Conjecture",
+            correctAnswer: "C"
+        },{
+            questionNumber: 121,
+            difficultyScore: 1,
+            questionContent: "Which sport is known as the 'beautiful game'?",
+            updateA: "Basketball",
+            updateB: "Baseball",
+            updateC: "Soccer",
+            updateD: "Cricket",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 122,
+            difficultyScore: 2,
+            questionContent: "In which sport would you perform a slam dunk?",
+            updateA: "Baseball",
+            updateB: "Soccer",
+            updateC: "Basketball",
+            updateD: "Volleyball",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 123,
+            difficultyScore: 7,
+            questionContent: "Which country hosted the first World Cup?",
+            updateA: "Italy",
+            updateB: "Brazil",
+            updateC: "Uruguay",
+            updateD: "France",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 124,
+            difficultyScore: 7,
+            questionContent: "Who holds the record for the most home runs in a single MLB season?",
+            updateA: "Barry Bonds",
+            updateB: "Babe Ruth",
+            updateC: "Mark McGwire",
+            updateD: "Sammy Sosa",
+            correctAnswer: "A"
+        }, {
+            questionNumber: 125,
+            difficultyScore: 8,
+            questionContent: "As of 2022, who holds the record for the fastest 100m sprint?",
+            updateA: "Tyson Gay",
+            updateB: "Usain Bolt",
+            updateC: "Yohan Blake",
+            updateD: "Justin Gatlin",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 126,
+            difficultyScore: 8,
+            questionContent: "Which Formula 1 driver won the World Championship seven times?",
+            updateA: "Lewis Hamilton",
+            updateB: "Michael Schumacher",
+            updateC: "Fernando Alonso",
+            updateD: "Sebastian Vettel",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 127,
+            difficultyScore: 7,
+            questionContent: "Which country has won the most Rugby Union World Cups?",
+            updateA: "England",
+            updateB: "South Africa",
+            updateC: "New Zealand",
+            updateD: "Australia",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 128,
+            difficultyScore: 8,
+            questionContent: "In golf, what is the term for a score of three under par on a hole?",
+            updateA: "Birdie",
+            updateB: "Eagle",
+            updateC: "Albatross",
+            updateD: "Bogey",
+            correctAnswer: "C"
         }
         ];
 
