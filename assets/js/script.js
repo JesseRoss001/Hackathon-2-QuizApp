@@ -1877,11 +1877,29 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         return difficultyTally;
     }
-
-
     console.log(difficultyTally(questionArray));
 
+    let easyQuestion1Chosen = false;
+
+ 
+
+    if (!easyQuestion1Chosen) {
+    const randomIndex = Math.floor(Math.random() * questionArray.length);
+    const  easyQuestion1 = questionArray[randomIndex].questionContent;
+     easyQuestion1Chosen = true;
+     console.log("Randomly selected easy question:", easyQuestion1);
+    }
+
+
+
     let displayQuestion = document.getElementById("question-space");
+   
+
+
+    
+
+
+
     document.getElementById("A-text").addEventListener('click', function () { selectA('A'); }
     );
     document.getElementById("B-text").addEventListener('click', function () { selectB('B'); }
