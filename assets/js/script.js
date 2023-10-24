@@ -1888,10 +1888,16 @@ const questionArray = [
     
     // Assuming questionArray is defined somewhere in your code
     console.log(difficultyTally(questionArray));
+
     
     let easyQuestion1Chosen = false;
     let filteredQuestions1 = []; 
     let displayQuestion = document.getElementById("question-space");
+    let displayA =document.getElementById("A-text")
+    let displayB =document.getElementById("B-text")
+    let displayC =document.getElementById("C-text")
+    let displayD =document.getElementById("D-text")
+    
     
     for (let i = 0; i < questionArray.length; i++) {
         if (questionArray[i].difficultyScore < 2) {
@@ -1903,20 +1909,18 @@ const questionArray = [
         const randomIndex = Math.floor(Math.random() * filteredQuestions1.length);
         const easyQuestion1 = filteredQuestions1[randomIndex];
         easyQuestion1Chosen = true;
-        const questionContent = easyQuestion1.questionContent;
-    
+        displayQuestion.innerHTML = easyQuestion1.questionContent;
+        displayA.innerHTML ="A: " +easyQuestion1.updateA;
+        displayB.innerHTML ="B: " +easyQuestion1.updateB;
+        displayC.innerHTML ="C: " +easyQuestion1.updateC;
+        displayD.innerHTML ="D: " +easyQuestion1.updateD;
+
+       
         console.log("Randomly selected easy question:", questionContent);
     } else {
         console.log("No questions with difficulty less than 1 found.");
     }
 
-
-
-    
-   
-
-
-    
 
 
 
@@ -1927,6 +1931,15 @@ const questionArray = [
     document.getElementById("C-text").addEventListener('click', function () { selectC('C'); }
     );
     document.getElementById("D-text").addEventListener('click', function () { selectD('D'); }
-    );
+    );    
+   
+
+
+function SelectA('A') 
+if ()
+
+
+
+
 
 });
