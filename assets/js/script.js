@@ -300,6 +300,216 @@ const questionArray = [
             updateD: "Iron",
             correctAnswer: "B"
         },
+        {
+            questionNumber: 31,
+            difficultyScore: 2,
+            questionContent: "What is the color of an emerald?",
+            updateA: "Red",
+            updateB: "Blue",
+            updateC: "Green",
+            updateD: "Yellow",
+            correctAnswer: "C"
+        },
+        {
+            questionNumber: 32,
+            difficultyScore: 1,
+            questionContent: "What is the capital of Italy?",
+            updateA: "Rome",
+            updateB: "Milan",
+            updateC: "Venice",
+            updateD: "Florence",
+            correctAnswer: "A"
+        },
+        {
+            questionNumber: 33,
+            difficultyScore: 1,
+            questionContent: "What is the tallest animal on Earth?",
+            updateA: "Elephant",
+            updateB: "Giraffe",
+            updateC: "Kangaroo",
+            updateD: "Ostrich",
+            correctAnswer: "B"
+        },
+        {
+            questionNumber: 34,
+            difficultyScore: 2,
+            questionContent: "What is the name of the first man to step on the moon?",
+            updateA: "Buzz Aldrin",
+            updateB: "Neil Armstrong",
+            updateC: "Michael Collins",
+            updateD: "John Glenn",
+            correctAnswer: "B"
+        },
+        {
+            questionNumber: 35,
+            difficultyScore: 5,
+            questionContent: "Which of these are a herb?",
+            updateA: "Pineapple",
+            updateB: "Gauva",
+            updateC: "Cinnamon ",
+            updateD: "Banana ",
+            correctAnswer: "D"
+        },
+        {
+            questionNumber: 36,
+            difficultyScore: 4,
+            questionContent: "What is the square root of 64?",
+            updateA: "6",
+            updateB: "7",
+            updateC: "8",
+            updateD: "9",
+            correctAnswer: "C"
+        },
+        {
+            questionNumber: 37,
+            difficultyScore: 4,
+            questionContent: "What is the most recycled plastic?",
+            updateA: "PC",
+            updateB: "PET",
+            updateC: " PVC",
+            updateD: "LDPE",
+            correctAnswer: "B"
+        },
+        {
+            questionNumber: 38,
+            difficultyScore: 3,
+            questionContent: "Which planet is known as the Blue Planet?",
+            updateA: "Mars",
+            updateB: "Jupiter",
+            updateC: "Earth",
+            updateD: "Saturn",
+            correctAnswer: "C"
+        },
+        {
+            questionNumber: 39,
+            difficultyScore: 1,
+            questionContent: "What is the primary ingredient in a Caesar Salad?",
+            updateA: "Lettuce",
+            updateB: "Tomatoes",
+            updateC: "Cucumbers",
+            updateD: "Carrots",
+            correctAnswer: "A"
+        },
+        {
+            questionNumber: 40,
+            difficultyScore: 2,
+            questionContent: "Which continent is the Sahara Desert located?",
+            updateA: "Asia",
+            updateB: "Africa",
+            updateC: "Australia",
+            updateD: "North America",
+            correctAnswer: "B"
+        },
+        {
+            questionNumber: 41,
+            difficultyScore: 1,
+            questionContent: "What is the hardest natural substance on Earth?",
+            updateA: "Gold",
+            updateB: "Iron",
+            updateC: "Diamond",
+            updateD: "Platinum",
+            correctAnswer: "C"
+        },
+        {
+            questionNumber: 42,
+            difficultyScore: 1,
+            questionContent: "Which language is primarily spoken in Spain?",
+            updateA: "French",
+            updateB: "English",
+            updateC: "Italian",
+            updateD: "Spanish",
+            correctAnswer: "D"
+        },
+        {
+            questionNumber: 43,
+            difficultyScore: 1,
+            questionContent: "What is the currency of Japan?",
+            updateA: "Dollar",
+            updateB: "Euro",
+            updateC: "Yen",
+            updateD: "Pound",
+            correctAnswer: "C"
+        },
+        {
+            questionNumber: 44,
+            difficultyScore: 7,
+            questionContent: "What is the capital of Switzerland?",
+            updateA: "Zurich",
+            updateB: "Bern",
+            updateC: "Geneva",
+            updateD: "Basel",
+            correctAnswer: "B"
+        },
+        {
+            questionNumber: 45,
+            difficultyScore: 3,
+            questionContent: "What is the longest bone in the human body?",
+            updateA: "Humerus",
+            updateB: "Femur",
+            updateC: "Tibia",
+            updateD: "Fibula",
+            correctAnswer: "B"
+        },
+        {
+            questionNumber: 46,
+            difficultyScore: 8,
+            questionContent: "Which planet has the longest day of all the planets in our solar system?",
+            updateA: "Earth",
+            updateB: "Mars",
+            updateC: "Venus",
+            updateD: "Jupiter",
+            correctAnswer: "C"
+        },
+        {
+            questionNumber: 47,
+            difficultyScore: 8,
+            questionContent: "Who is known as the Father of Computers?",
+            updateA: "Charles Babbage",
+            updateB: "Alan Turing",
+            updateC: "John von Neumann",
+            updateD: "Bill Gates",
+            correctAnswer: "A"
+        },
+        {
+            questionNumber: 48,
+            difficultyScore: 2,
+            questionContent: "What is the chemical symbol for water?",
+            updateA: "O2",
+            updateB: "CO2",
+            updateC: "H2O",
+            updateD: "N2",
+            correctAnswer: "C"
+        },
+        {
+            questionNumber: 49,
+            difficultyScore: 7,
+            questionContent: "What is the capital of New Zealand?",
+            updateA: "Sydney",
+            updateB: "Auckland",
+            updateC: "Wellington",
+            updateD: "Christchurch",
+            correctAnswer: "C"
+        },
+        {
+            questionNumber: 50,
+            difficultyScore: 4,
+            questionContent: "Who discovered penicillin?",
+            updateA: "Marie Curie",
+            updateB: "Alexander Fleming",
+            updateC: "Louis Pasteur",
+            updateD: "Joseph Lister",
+            correctAnswer: "B"
+        },
+        {
+            questionNumber: 51,
+            difficultyScore: 4,
+            questionContent: "Which country is known as the Land of White Elephant?",
+            updateA: "India",
+            updateB: "Sri Lanka",
+            updateC: "Thailand",
+            updateD: "Myanmar",
+            correctAnswer: "C"
+        },
         ];
 
 // Going to make a tally function so that i can see how much of each difficulty is present 
