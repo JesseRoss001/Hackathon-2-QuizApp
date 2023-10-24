@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const questionArray = [
+const questionArray = [
         {
             questionNumber: 1,
             difficultyScore: 1,
@@ -1637,7 +1637,6 @@ document.addEventListener("DOMContentLoaded", function () {
             correctAnswer: "A"
         },
 
-        // Difficulty Score 10 - Culture Questions
         {
             questionNumber: 170,
             difficultyScore: 9,
@@ -1869,30 +1868,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Going to make a tally function so that i can see how much of each difficulty is present 
     function difficultyTally(questionArray) {
-        const difficultyTally = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 };
-
+        const difficultyTally = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, undefined: 0 };
+    
         for (let i = 0; i < questionArray.length; i++) {
             const difficultyScore = questionArray[i].difficultyScore;
-            difficultyTally[difficultyScore]++;
+    
+            if (difficultyTally.hasOwnProperty(difficultyScore)) {
+                difficultyTally[difficultyScore]++;
+            } else {
+                difficultyTally.undefined++;
+            }
         }
+    
         return difficultyTally;
     }
+
+
+    
+    
+    // Assuming questionArray is defined somewhere in your code
     console.log(difficultyTally(questionArray));
-
+    
     let easyQuestion1Chosen = false;
-
- 
-
-    if (!easyQuestion1Chosen) {
-    const randomIndex = Math.floor(Math.random() * questionArray.length);
-    const  easyQuestion1 = questionArray[randomIndex].questionContent;
-     easyQuestion1Chosen = true;
-     console.log("Randomly selected easy question:", easyQuestion1);
+    let filteredQuestions1 = []; 
+    let displayQuestion = document.getElementById("question-space");
+    
+    for (let i = 0; i < questionArray.length; i++) {
+        if (questionArray[i].difficultyScore < 2) {
+            filteredQuestions1.push(questionArray[i]);
+        }
+    }
+    
+    if (!easyQuestion1Chosen && filteredQuestions1.length > 0) {
+        const randomIndex = Math.floor(Math.random() * filteredQuestions1.length);
+        const easyQuestion1 = filteredQuestions1[randomIndex];
+        easyQuestion1Chosen = true;
+        const questionContent = easyQuestion1.questionContent;
+    
+        console.log("Randomly selected easy question:", questionContent);
+    } else {
+        console.log("No questions with difficulty less than 1 found.");
     }
 
 
 
-    let displayQuestion = document.getElementById("question-space");
+    
    
 
 
