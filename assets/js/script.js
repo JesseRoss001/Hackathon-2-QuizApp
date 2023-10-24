@@ -1889,7 +1889,7 @@ const questionArray = [
     // Assuming questionArray is defined somewhere in your code
     console.log(difficultyTally(questionArray));
 
-    
+    let currentQuestion = null  ;
     let easyQuestion1Chosen = false;
     let filteredQuestions1 = []; 
     let displayQuestion = document.getElementById("question-space");
@@ -1907,16 +1907,16 @@ const questionArray = [
     
     if (!easyQuestion1Chosen && filteredQuestions1.length > 0) {
         const randomIndex = Math.floor(Math.random() * filteredQuestions1.length);
-        const easyQuestion1 = filteredQuestions1[randomIndex];
+        currentQuestion = filteredQuestions1[randomIndex];
         easyQuestion1Chosen = true;
-        displayQuestion.innerHTML = easyQuestion1.questionContent;
-        displayA.innerHTML ="A: " +easyQuestion1.updateA;
-        displayB.innerHTML ="B: " +easyQuestion1.updateB;
-        displayC.innerHTML ="C: " +easyQuestion1.updateC;
-        displayD.innerHTML ="D: " +easyQuestion1.updateD;
+        displayQuestion.innerHTML = currentQuestion.questionContent;
+        displayA.innerHTML ="A: " +currentQuestion.updateA;
+        displayB.innerHTML ="B: " +currentQuestion.updateB;
+        displayC.innerHTML ="C: " +currentQuestion.updateC;
+        displayD.innerHTML ="D: " +currentQuestion.updateD;
 
        
-        console.log("Randomly selected easy question:", questionContent);
+        console.log("Randomly selected easy question:", currentQuestion.questionContent);
     } else {
         console.log("No questions with difficulty less than 1 found.");
     }
@@ -1924,22 +1924,39 @@ const questionArray = [
 
 
 
-    document.getElementById("A-text").addEventListener('click', function () { selectA('A'); }
+    document.getElementById("A-text").addEventListener('click', function () { selectA("A"); }
     );
-    document.getElementById("B-text").addEventListener('click', function () { selectB('B'); }
+    document.getElementById("B-text").addEventListener('click', function () { selectB("B"); }
     );
-    document.getElementById("C-text").addEventListener('click', function () { selectC('C'); }
+    document.getElementById("C-text").addEventListener('click', function () { selectC("C"); }
     );
-    document.getElementById("D-text").addEventListener('click', function () { selectD('D'); }
+    document.getElementById("D-text").addEventListener('click', function () { selectD("D"); }
     );    
    
 
 
-function SelectA('A') 
-if ()
+function selectA (selectedOption) {
+    checkAnswer(selectedOption);
+}
+
+function selectB (selectedOption) {
+    checkAnswer(selectedOption);
+}
 
 
+function selectC (selectedOption) {
+    checkAnswer(selectedOption);
+}
 
+function selectD (selectedOption) {
+    checkAnswer(selectedOption);
+}
 
-
+function checkAnswer(selectedOption) {
+    if (currentQuestion && currentQuestion.correctAnswer === selectedOption) {
+        // go to the next question 
+    } else {
+        alert("You Failed");
+    }
+}
 });
