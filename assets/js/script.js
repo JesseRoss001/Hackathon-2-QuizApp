@@ -1,13 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() { 
-const questionArray = [
-    {questionNumber:1,
-    difficultyScore:1,
-    questionContent: "What does BBC stand for?" ,
-    updateA: "British Broadcasting Colour" ,
-     updateB: "British Boys Club",
-      updateC : "British Badminton Corporation",
-       updateD :"British BroadCasting Company",
-        correctAnswer : "D"}, {
+document.addEventListener("DOMContentLoaded", function () {
+    const questionArray = [
+        {
+            questionNumber: 1,
+            difficultyScore: 1,
+            questionContent: "What does BBC stand for?",
+            updateA: "British Broadcasting Colour",
+            updateB: "British Boys Club",
+            updateC: "British Badminton Corporation",
+            updateD: "British BroadCasting Company",
+            correctAnswer: "D"
+        }, {
 
         },
         {
@@ -19,8 +21,8 @@ const questionArray = [
             updateC: "Malnutrition",
             updateD: "Hypothermia",
             correctAnswer: "B"
-          },
-          {
+        },
+        {
             questionNumber: 3,
             difficultyScore: 1,
             questionContent: "What is the capital of France?",
@@ -29,8 +31,8 @@ const questionArray = [
             updateC: "Paris",
             updateD: "Madrid",
             correctAnswer: "C"
-          },
-          {
+        },
+        {
             questionNumber: 4,
             difficultyScore: 2,
             questionContent: "Which planet is known as the Red Planet?",
@@ -39,8 +41,8 @@ const questionArray = [
             updateC: "Jupiter",
             updateD: "Saturn",
             correctAnswer: "B"
-          },
-          {
+        },
+        {
             questionNumber: 5,
             difficultyScore: 1,
             questionContent: "Which animal is known as the King of the Jungle?",
@@ -49,8 +51,8 @@ const questionArray = [
             updateC: "Lion",
             updateD: "Giraffe",
             correctAnswer: "C"
-          },
-          {
+        },
+        {
             questionNumber: 6,
             difficultyScore: 2,
             questionContent: "Which fruit is known as the King of Fruits?",
@@ -59,8 +61,8 @@ const questionArray = [
             updateC: "Durian",
             updateD: "Grapes",
             correctAnswer: "C"
-          },
-          {
+        },
+        {
             questionNumber: 7,
             difficultyScore: 1,
             questionContent: "What is the main ingredient in guacamole?",
@@ -69,8 +71,8 @@ const questionArray = [
             updateC: "Avocado",
             updateD: "Onions",
             correctAnswer: "C"
-          },
-          {
+        },
+        {
             questionNumber: 8,
             difficultyScore: 1,
             questionContent: "What is the primary language spoken in Brazil?",
@@ -79,8 +81,8 @@ const questionArray = [
             updateC: "Portuguese",
             updateD: "French",
             correctAnswer: "C"
-          },
-          {
+        },
+        {
             questionNumber: 9,
             difficultyScore: 1,
             questionContent: "What is the tallest mountain in the world?",
@@ -89,8 +91,8 @@ const questionArray = [
             updateC: "Kangchenjunga",
             updateD: "Lhotse",
             correctAnswer: "B"
-          },
-          {
+        },
+        {
             questionNumber: 10,
             difficultyScore: 2,
             questionContent: "Who painted the Mona Lisa?",
@@ -99,8 +101,8 @@ const questionArray = [
             updateC: "Leonardo da Vinci",
             updateD: "Michelangelo",
             correctAnswer: "C"
-          },
-          {
+        },
+        {
             questionNumber: 11,
             difficultyScore: 1,
             questionContent: "What is the capital of Japan?",
@@ -109,8 +111,8 @@ const questionArray = [
             updateC: "Tokyo",
             updateD: "Osaka",
             correctAnswer: "C"
-          },
-          {
+        },
+        {
             questionNumber: 12,
             difficultyScore: 2,
             questionContent: "Which ocean is the largest?",
@@ -119,8 +121,8 @@ const questionArray = [
             updateC: "Arctic Ocean",
             updateD: "Pacific Ocean",
             correctAnswer: "D"
-          },
-          {
+        },
+        {
             questionNumber: 13,
             difficultyScore: 1,
             questionContent: "What is the name of the fairy tale character who leaves a glass slipper at a royal ball?",
@@ -129,8 +131,8 @@ const questionArray = [
             updateC: "Snow White",
             updateD: "Rapunzel",
             correctAnswer: "B"
-          },
-          {
+        },
+        {
             questionNumber: 14,
             difficultyScore: 2,
             questionContent: "What is the primary ingredient in a traditional Greek salad?",
@@ -139,8 +141,8 @@ const questionArray = [
             updateC: "Tomatoes",
             updateD: "Carrots",
             correctAnswer: "C"
-          },
-          {
+        },
+        {
             questionNumber: 15,
             difficultyScore: 1,
             questionContent: "Which country is known as the Land of the Rising Sun?",
@@ -149,8 +151,8 @@ const questionArray = [
             updateC: "Japan",
             updateD: "Vietnam",
             correctAnswer: "C"
-          },
-          {
+        },
+        {
             questionNumber: 16,
             difficultyScore: 2,
             questionContent: "What is the name of the Disney character known for leaving a trail of breadcrumbs?",
@@ -159,8 +161,8 @@ const questionArray = [
             updateC: "Hansel",
             updateD: "Peter Pan",
             correctAnswer: "C"
-          },
-          {
+        },
+        {
             questionNumber: 17,
             difficultyScore: 2,
             questionContent: "What is the boiling point of water?",
@@ -169,8 +171,8 @@ const questionArray = [
             updateC: "0°C",
             updateD: "32°F",
             correctAnswer: "A"
-          },
-          {
+        },
+        {
             questionNumber: 18,
             difficultyScore: 1,
             questionContent: "What is the main ingredient in hummus?",
@@ -179,8 +181,8 @@ const questionArray = [
             updateC: "Lentils",
             updateD: "Black Beans",
             correctAnswer: "B"
-          },
-          {
+        },
+        {
             questionNumber: 19,
             difficultyScore: 2,
             questionContent: "Which planet is known as the Earth's twin due to its similar size?",
@@ -189,8 +191,8 @@ const questionArray = [
             updateC: "Venus",
             updateD: "Saturn",
             correctAnswer: "C"
-          },
-          {
+        },
+        {
             questionNumber: 20,
             difficultyScore: 2,
             questionContent: "What is the primary language spoken in Australia?",
@@ -199,8 +201,8 @@ const questionArray = [
             updateC: "French",
             updateD: "German",
             correctAnswer: "B"
-          },
-          {
+        },
+        {
             questionNumber: 21,
             difficultyScore: 1,
             questionContent: "What is the main ingredient in chocolate?",
@@ -509,7 +511,7 @@ const questionArray = [
             updateC: "Thailand",
             updateD: "Myanmar",
             correctAnswer: "C"
-        },{
+        }, {
             questionNumber: 52,
             difficultyScore: 2,
             questionContent: "Which superhero is known as the 'Caped Crusader'?",
@@ -948,7 +950,7 @@ const questionArray = [
             updateC: "Hera",
             updateD: "Aphrodite",
             correctAnswer: "D"
-        },{
+        }, {
             questionNumber: 97,
             difficultyScore: 7,
             questionContent: "Which Greek mythological figure was doomed to continuously roll a boulder uphill?",
@@ -990,7 +992,7 @@ const questionArray = [
         },
         {
             questionNumber: 101,
-            difficultyScore:7,
+            difficultyScore: 7,
             questionContent: "Which era of music history is characterized by the use of harpsichord and complex counterpoint?",
             updateA: "Baroque",
             updateB: "Classical",
@@ -1087,7 +1089,7 @@ const questionArray = [
             updateC: "Ludwig van Beethoven",
             updateD: "Franz Schubert",
             correctAnswer: "C"
-        } ,{
+        }, {
             questionNumber: 111,
             difficultyScore: 6,
             questionContent: "Which hero is known for his twelve labors?",
@@ -1106,7 +1108,7 @@ const questionArray = [
             updateC: "Centaur",
             updateD: "Medusa",
             correctAnswer: "A"
-        },{
+        }, {
             questionNumber: 113,
             difficultyScore: 8,
             questionContent: "If all roses are flowers and some flowers fade quickly, can it be logically assumed that some roses fade quickly?",
@@ -1185,7 +1187,7 @@ const questionArray = [
             updateC: "Proposition",
             updateD: "Conjecture",
             correctAnswer: "C"
-        },{
+        }, {
             questionNumber: 121,
             difficultyScore: 1,
             questionContent: "Which sport is known as the 'beautiful game'?",
@@ -1257,31 +1259,636 @@ const questionArray = [
             updateC: "Albatross",
             updateD: "Bogey",
             correctAnswer: "C"
+        }, {
+            questionNumber: 129,
+            difficultyScore: 3,
+            questionContent: "Which country is known as the 'All Blacks' in rugby?",
+            updateA: "Australia",
+            updateB: "South Africa",
+            updateC: "New Zealand",
+            updateD: "England",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 130,
+            difficultyScore: 4,
+            questionContent: "Which tennis player has won the most Grand Slam titles?",
+            updateA: "Roger Federer",
+            updateB: "Rafael Nadal",
+            updateC: "Novak Djokovic",
+            updateD: "Margaret Court",
+            correctAnswer: "D"
+        }, {
+            questionNumber: 131,
+            difficultyScore: 6,
+            questionContent: "Which city hosted the 2016 Summer Olympics?",
+            updateA: "London",
+            updateB: "Beijing",
+            updateC: "Rio de Janeiro",
+            updateD: "Tokyo",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 132,
+            difficultyScore: 7,
+            questionContent: "In which sport would you perform a 'Fosbury Flop'?",
+            updateA: "Pole Vault",
+            updateB: "Long Jump",
+            updateC: "High Jump",
+            updateD: "Triple Jump",
+            correctAnswer: "C"
+        },
+
+        // Music Questions
+        {
+            questionNumber: 133,
+            difficultyScore: 3,
+            questionContent: "Which musical instrument is known as the 'King of Instruments'?",
+            updateA: "Piano",
+            updateB: "Violin",
+            updateC: "Organ",
+            updateD: "Guitar",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 134,
+            difficultyScore: 4,
+            questionContent: "Who is known as the 'Queen of Pop'?",
+            updateA: "Britney Spears",
+            updateB: "Madonna",
+            updateC: "Lady Gaga",
+            updateD: "Ariana Grande",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 135,
+            difficultyScore: 6,
+            questionContent: "Which composer is known for his Brandenburg Concertos?",
+            updateA: "Ludwig van Beethoven",
+            updateB: "Wolfgang Amadeus Mozart",
+            updateC: "Johann Sebastian Bach",
+            updateD: "Franz Schubert",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 137,
+            difficultyScore: 4,
+            questionContent: "Which movie won the Best Picture Oscar in 2020?",
+            updateA: "Parasite",
+            updateB: "1917",
+            updateC: "Joker",
+            updateD: "Once Upon a Time in Hollywood",
+            correctAnswer: "A"
+        }, {
+            questionNumber: 138,
+            difficultyScore: 4,
+            questionContent: "Who directed the film 'Inception'?",
+            updateA: "Steven Spielberg",
+            updateB: "Christopher Nolan",
+            updateC: "Quentin Tarantino",
+            updateD: "Martin Scorsese",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 139,
+            difficultyScore: 4,
+            questionContent: "Which actress stars as the character Rey in the 'Star Wars' sequel trilogy?",
+            updateA: "Natalie Portman",
+            updateB: "Daisy Ridley",
+            updateC: "Felicity Jones",
+            updateD: "Emma Watson",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 140,
+            difficultyScore: 4,
+            questionContent: "Which 2018 film is based on a Marvel Comics character and features a symbiote?",
+            updateA: "Black Panther",
+            updateB: "Venom",
+            updateC: "Avengers: Infinity War",
+            updateD: "Ant-Man and The Wasp",
+            correctAnswer: "B"
+        },
+
+        // Difficulty Score 5 - Film Questions
+        {
+            questionNumber: 141,
+            difficultyScore: 5,
+            questionContent: "Who played the character of Harley Quinn in the film 'Suicide Squad'?",
+            updateA: "Margot Robbie",
+            updateB: "Scarlett Johansson",
+            updateC: "Emma Stone",
+            updateD: "Jennifer Lawrence",
+            correctAnswer: "A"
+        }, {
+            questionNumber: 142,
+            difficultyScore: 5,
+            questionContent: "Which film was directed by Jordan Peele and explores themes of race and privilege?",
+            updateA: "Us",
+            updateB: "Get Out",
+            updateC: "A Quiet Place",
+            updateD: "Hereditary",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 143,
+            difficultyScore: 5,
+            questionContent: "Which film features a fictional African country named Wakanda?",
+            updateA: "Black Panther",
+            updateB: "The Lion King",
+            updateC: "Coming to America",
+            updateD: "Hotel Rwanda",
+            correctAnswer: "A"
+        }, {
+            questionNumber: 144,
+            difficultyScore: 5,
+            questionContent: "In the film 'La La Land', who played the character of Mia?",
+            updateA: "Anna Kendrick",
+            updateB: "Emma Stone",
+            updateC: "Rachel McAdams",
+            updateD: "Emily Blunt",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 145,
+            difficultyScore: 8,
+            questionContent: "Which film won the Palme d'Or at the Cannes Film Festival in 2019?",
+            updateA: "Once Upon a Time in Hollywood",
+            updateB: "Parasite",
+            updateC: "Pain and Glory",
+            updateD: "The Lighthouse",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 146,
+            difficultyScore: 8,
+            questionContent: "In the film 'The Lobster', what happens to single people if they don't find a partner?",
+            updateA: "They are turned into animals",
+            updateB: "They are exiled",
+            updateC: "They are imprisoned",
+            updateD: "They are executed",
+            correctAnswer: "A"
+        },
+
+        // Difficulty Score 9 - Niche Film Questions
+        {
+            questionNumber: 147,
+            difficultyScore: 9,
+            questionContent: "Which director is known for his distinctive use of the 'Mexican Standoff' in his films?",
+            updateA: "Quentin Tarantino",
+            updateB: "Sergio Leone",
+            updateC: "Martin Scorsese",
+            updateD: "John Woo",
+            correctAnswer: "D"
+        }, {
+            questionNumber: 148,
+            difficultyScore: 9,
+            questionContent: "Which 2013 film directed by Shane Carruth explores the life cycle of an ageless organism?",
+            updateA: "Primer",
+            updateB: "Upstream Color",
+            updateC: "The Signal",
+            updateD: "Timecrimes",
+            correctAnswer: "B"
+        },
+
+        // Difficulty Score 10 - Niche Film Questions
+        {
+            questionNumber: 149,
+            difficultyScore: 10,
+            questionContent: "In 'Inland Empire', who plays the character of Nikki Grace / Susan Blue?",
+            updateA: "Naomi Watts",
+            updateB: "Laura Dern",
+            updateC: "Julianne Moore",
+            updateD: "Nicole Kidman",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 150,
+            difficultyScore: 10,
+            questionContent: "Which film was shot in a single continuous take and directed by Sebastian Schipper?",
+            updateA: "1917",
+            updateB: "Russian Ark",
+            updateC: "Birdman",
+            updateD: "Victoria",
+            correctAnswer: "D"
+        },
+        {
+            questionNumber: 151,
+            difficultyScore: 8,
+            questionContent: "Which scientist is known for the Uncertainty Principle?",
+            updateA: "Albert Einstein",
+            updateB: "Niels Bohr",
+            updateC: "Werner Heisenberg",
+            updateD: "Richard Feynman",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 152,
+            difficultyScore: 9,
+            questionContent: "Who won the Nobel Prize in Physics in 2018?",
+            updateA: "Roger Penrose",
+            updateB: "Arthur Ashkin",
+            updateC: "Andrea Ghez",
+            updateD: "Didier Queloz",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 153,
+            difficultyScore: 5,
+            questionContent: "Which element has the chemical symbol 'Au'?",
+            updateA: "Silver",
+            updateB: "Copper",
+            updateC: "Gold",
+            updateD: "Iron",
+            correctAnswer: "C"
+        },
+
+        // Difficulty Score 9 - Science and Science Awards Questions
+        {
+            questionNumber: 154,
+            difficultyScore: 7,
+            questionContent: "Which scientist developed the theory of electromagnetism?",
+            updateA: "Isaac Newton",
+            updateB: "James Clerk Maxwell",
+            updateC: "Albert Einstein",
+            updateD: "Michael Faraday",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 155,
+            difficultyScore: 8,
+            questionContent: "Who discovered the circulation of blood in the human body?",
+            updateA: "Hippocrates",
+            updateB: "Avicenna",
+            updateC: "Andreas Vesalius",
+            updateD: "William Harvey",
+            correctAnswer: "D"
+        }, {
+            questionNumber: 156,
+            difficultyScore: 4,
+            questionContent: "What is the name of the Mars rover that landed in 2012?",
+            updateA: "Spirit",
+            updateB: "Opportunity",
+            updateC: "Curiosity",
+            updateD: "Perseverance",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 157,
+            difficultyScore: 8,
+            questionContent: "Which physicist is known for the theory of electron spin?",
+            updateA: "Paul Dirac",
+            updateB: "Wolfgang Pauli",
+            updateC: "Samuel Goudsmit",
+            updateD: "George Uhlenbeck",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 158,
+            difficultyScore: 10,
+            questionContent: "Who was awarded the Nobel Prize in Chemistry in 2019?",
+            updateA: "John B. Goodenough",
+            updateB: "Emmanuelle Charpentier",
+            updateC: "Dorothy Crowfoot Hodgkin",
+            updateD: "Ahmed Zewail",
+            correctAnswer: "A"
+        }, {
+            questionNumber: 159,
+            difficultyScore: 9,
+            questionContent: "What is the principle behind the functioning of a quantum computer?",
+            updateA: "Superposition",
+            updateB: "Binary coding",
+            updateC: "Transistor switching",
+            updateD: "Boolean logic",
+            correctAnswer: "A"
+        }, {
+            questionNumber: 160,
+            difficultyScore: 7,
+            questionContent: "Who discovered the DNA's double helix structure?",
+            updateA: "Watson and Crick",
+            updateB: "Rosalind Franklin",
+            updateC: "Linus Pauling",
+            updateD: "Gregor Mendel",
+            correctAnswer: "A"
+        }, {
+            questionNumber: 161,
+            difficultyScore: 8,
+            questionContent: "Which particle is known as the 'God Particle'?",
+            updateA: "Neutron",
+            updateB: "Proton",
+            updateC: "Higgs Boson",
+            updateD: "Electron",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 162,
+            difficultyScore: 2,
+            questionContent: "Which scientist is known for his work on black holes and Hawking radiation?",
+            updateA: "Stephen Hawking",
+            updateB: "Albert Einstein",
+            updateC: "Roger Penrose",
+            updateD: "Kip Thorne",
+            correctAnswer: "A"
+        }, {
+            questionNumber: 163,
+            difficultyScore: 7,
+            questionContent: "What is the name of the spacecraft that provided detailed images of Pluto?",
+            updateA: "Voyager 1",
+            updateB: "New Horizons",
+            updateC: "Juno",
+            updateD: "Cassini",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 164,
+            difficultyScore: 1,
+            questionContent: "Who is known for the 'Schrodinger's Cat' thought experiment?",
+            updateA: "Albert Einstein",
+            updateB: "Niels Bohr",
+            updateC: "Werner Heisenberg",
+            updateD: "Erwin Schrödinger",
+            correctAnswer: "D"
+        }, {
+            questionNumber: 165,
+            difficultyScore: 5,
+            questionContent: "Who formulated the periodic law and created the Periodic Table of Elements?",
+            updateA: "Marie Curie",
+            updateB: "Dmitri Mendeleev",
+            updateC: "Gilbert Lewis",
+            updateD: "Robert H. Grubbs",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 166,
+            difficultyScore: 5,
+            questionContent: "Which country is known for its tradition of Flamenco music and dance?",
+            updateA: "Italy",
+            updateB: "France",
+            updateC: "Spain",
+            updateD: "Portugal",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 167,
+            difficultyScore: 5,
+            questionContent: "Which festival is known as the Festival of Lights?",
+            updateA: "Diwali",
+            updateB: "Holi",
+            updateC: "Eid",
+            updateD: "Hanukkah",
+            correctAnswer: "A"
+        }, {
+            questionNumber: 168,
+            difficultyScore: 5,
+            questionContent: "Which ancient civilization built the pyramids of Giza?",
+            updateA: "Mayans",
+            updateB: "Aztecs",
+            updateC: "Incas",
+            updateD: "Egyptians",
+            correctAnswer: "D"
+        }, {
+            questionNumber: 169,
+            difficultyScore: 8,
+            questionContent: "What is the name of the traditional Hawaiian feast?",
+            updateA: "Luau",
+            updateB: "Haupia",
+            updateC: "Poi",
+            updateD: "Lomi",
+            correctAnswer: "A"
+        },
+
+        // Difficulty Score 10 - Culture Questions
+        {
+            questionNumber: 170,
+            difficultyScore: 9,
+            questionContent: "Which artist is associated with the 'Readymades' art concept?",
+            updateA: "Vincent Van Gogh",
+            updateB: "Pablo Picasso",
+            updateC: "Marcel Duchamp",
+            updateD: "Salvador Dali",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 171,
+            difficultyScore: 5,
+            questionContent: "What is the name of the indigenous people native to Greenland?",
+            updateA: "Sami",
+            updateB: "Inuit",
+            updateC: "Maori",
+            updateD: "Aborigines",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 172,
+            difficultyScore: 8,
+            questionContent: "Which philosopher wrote 'Critique of Pure Reason'?",
+            updateA: "Immanuel Kant",
+            updateB: "Friedrich Nietzsche",
+            updateC: "Søren Kierkegaard",
+            updateD: "Jean-Jacques Rousseau",
+            correctAnswer: "A"
+        }, {
+            questionNumber: 173,
+            difficultyScore: 10,
+            questionContent: "Which anthropologist is known for her work among the Samoans and wrote 'Coming of Age in Samoa'?",
+            updateA: "Margaret Mead",
+            updateB: "Ruth Benedict",
+            updateC: "Bronisław Malinowski",
+            updateD: "Claude Lévi-Strauss",
+            correctAnswer: "A"
+        }, {
+            questionNumber: 174,
+            difficultyScore: 7,
+            questionContent: "Which country is home to the indigenous Maori culture?",
+            updateA: "Australia",
+            updateB: "New Zealand",
+            updateC: "Indonesia",
+            updateD: "Malaysia",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 175,
+            difficultyScore: 4,
+            questionContent: "In which country did the Renaissance art movement originate?",
+            updateA: "France",
+            updateB: "Germany",
+            updateC: "Italy",
+            updateD: "Spain",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 169,
+            difficultyScore: 10,
+            questionContent: "Which ancient civilization worshipped the deity Quetzalcoatl?",
+            updateA: "Mayan",
+            updateB: "Aztec",
+            updateC: "Inca",
+            updateD: "Olmec",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 170,
+            difficultyScore: 10,
+            questionContent: "What is the traditional Japanese art of folding paper called?",
+            updateA: "Kintsugi",
+            updateB: "Ikebana",
+            updateC: "Origami",
+            updateD: "Kabuki",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 171,
+            difficultyScore: 10,
+            questionContent: "In which African country is the dance style 'Kizomba' originated?",
+            updateA: "Nigeria",
+            updateB: "South Africa",
+            updateC: "Angola",
+            updateD: "Kenya",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 172,
+            difficultyScore: 10,
+            questionContent: "What is the name of the dragon boat festival celebrated in China?",
+            updateA: "Qingming Festival",
+            updateB: "Mid-Autumn Festival",
+            updateC: "Duanwu Festival",
+            updateD: "Spring Festival",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 173,
+            difficultyScore: 10,
+            questionContent: "Which culture is credited with the creation of the Cyrillic alphabet?",
+            updateA: "Greek",
+            updateB: "Roman",
+            updateC: "Bulgarian",
+            updateD: "Byzantine",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 174,
+            difficultyScore: 5,
+            questionContent: "What is the name of the Norse hall where fallen warriors are said to feast?",
+            updateA: "Asgard",
+            updateB: "Midgard",
+            updateC: "Valhalla",
+            updateD: "Niflheim",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 175,
+            difficultyScore: 8,
+            questionContent: "Which ancient civilization worshipped the deity Quetzalcoatl?",
+            updateA: "Mayan",
+            updateB: "Aztec",
+            updateC: "Inca",
+            updateD: "Olmec",
+            correctAnswer: "B"
+        },
+
+        {
+            questionNumber: 176,
+            difficultyScore: 10,
+            questionContent: "In which African country is the dance style 'Kizomba' originated?",
+            updateA: "Nigeria",
+            updateB: "South Africa",
+            updateC: "Angola",
+            updateD: "Kenya",
+            correctAnswer: "C"
         }
-        ];
 
-// Going to make a tally function so that i can see how much of each difficulty is present 
-function difficultyTally(questionArray) {
-    const difficultyTally = {1: 0 , 2:0 , 3:0 , 4:0 ,5:0 ,6 :0 , 7:0 , 8:0 ,9:0 ,10:0 };
+        , {
+            questionNumber: 177,
+            difficultyScore: 8,
+            questionContent: "What is the name of the dragon boat festival celebrated in China?",
+            updateA: "Qingming Festival",
+            updateB: "Mid-Autumn Festival",
+            updateC: "Duanwu Festival",
+            updateD: "Spring Festival",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 178,
+            difficultyScore: 9,
+            questionContent: "Which culture is credited with the creation of the Cyrillic alphabet?",
+            updateA: "Greek",
+            updateB: "Roman",
+            updateC: "Bulgarian",
+            updateD: "Byzantine",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 179,
+            difficultyScore: 3,
+            questionContent: "In which country is the ancient city of Machu Picchu located?",
+            updateA: "Mexico",
+            updateB: "Peru",
+            updateC: "Colombia",
+            updateD: "Brazil",
+            correctAnswer: "B"
+        },
+        
+        // Difficulty Score 6 - History Questions
+        {
+            questionNumber: 180,
+            difficultyScore: 6,
+            questionContent: "Who was the longest reigning monarch in British history?",
+            updateA: "Queen Victoria",
+            updateB: "King George III",
+            updateC: "Queen Elizabeth II",
+            updateD: "King Henry VIII",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 181,
+            difficultyScore: 6,
+            questionContent: "What was the primary cause of the Opium Wars in the 19th century?",
+            updateA: "Territorial disputes",
+            updateB: "Religious differences",
+            updateC: "Trade imbalances",
+            updateD: "Political ideologies",
+            correctAnswer: "C"
+        }, {
+            questionNumber: 182,
+            difficultyScore: 6,
+            questionContent: "Which empire was known as the 'Sick Man of Europe' in the 19th century?",
+            updateA: "Austrian Empire",
+            updateB: "Russian Empire",
+            updateC: "Ottoman Empire",
+            updateD: "British Empire",
+            correctAnswer: "C"
+        },
+        
+        // Difficulty Score 9 - History Questions
+        {
+            questionNumber: 183,
+            difficultyScore: 9,
+            questionContent: "Who was the ruler of the Kingdom of Kongo during the arrival of the Portuguese in the late 15th century?",
+            updateA: "Nzinga Mvemba",
+            updateB: "Affonso I",
+            updateC: "Shamba Bolongongo",
+            updateD: "Henrique I",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 184,
+            difficultyScore: 9,
+            questionContent: "Which Chinese dynasty succeeded the Ming Dynasty?",
+            updateA: "Yuan Dynasty",
+            updateB: "Qing Dynasty",
+            updateC: "Han Dynasty",
+            updateD: "Tang Dynasty",
+            correctAnswer: "B"
+        }, {
+            questionNumber: 185,
+            difficultyScore: 9,
+            questionContent: "Which Mughal Emperor commissioned the construction of the Taj Mahal?",
+            updateA: "Babur",
+            updateB: "Akbar",
+            updateC: "Jahangir",
+            updateD: "Shah Jahan",
+            correctAnswer: "D"
+        },{
+            questionNumber: 186,
+            difficultyScore: 3,
+            questionContent: "Which country was formerly known as Persia?",
+            updateA: "Turkey",
+            updateB: "Iran",
+            updateC: "Iraq",
+            updateD: "Egypt",
+            correctAnswer: "B"
+        }
+    ];
 
-    for (let i=0 ; i < questionArray.length; i++) {
-        const difficultyScore = questionArray[i].difficultyScore;
-        difficultyTally[difficultyScore]++;
+    // Going to make a tally function so that i can see how much of each difficulty is present 
+    function difficultyTally(questionArray) {
+        const difficultyTally = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 };
+
+        for (let i = 0; i < questionArray.length; i++) {
+            const difficultyScore = questionArray[i].difficultyScore;
+            difficultyTally[difficultyScore]++;
+        }
+        return difficultyTally;
     }
-       return difficultyTally;
-    }
 
 
-console.log(difficultyTally(questionArray));
+    console.log(difficultyTally(questionArray));
 
-let displayQuestion = document.getElementById("question-space");
-document.getElementById("A-text").addEventListener('click',function() {  selectA ('A') ; }
-);
-document.getElementById("B-text").addEventListener('click',function() {  selectB ('B') ; }
-);
-document.getElementById("C-text").addEventListener('click',function() {  selectC ('C') ; }
-);
-document.getElementById("D-text").addEventListener('click',function() {  selectD ('D') ; }
-);
+    let displayQuestion = document.getElementById("question-space");
+    document.getElementById("A-text").addEventListener('click', function () { selectA('A'); }
+    );
+    document.getElementById("B-text").addEventListener('click', function () { selectB('B'); }
+    );
+    document.getElementById("C-text").addEventListener('click', function () { selectC('C'); }
+    );
+    document.getElementById("D-text").addEventListener('click', function () { selectD('D'); }
+    );
 
 });
