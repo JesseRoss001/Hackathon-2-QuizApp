@@ -252,7 +252,7 @@ const questionArray = [
         },
         {
             questionNumber: 26,
-            difficultyScore: 14,
+            difficultyScore: 9,
             questionContent: "Which day is celebrated as World Environment Day?",
             updateA: "June 5",
             updateB: "April 22",
@@ -272,7 +272,7 @@ const questionArray = [
         },
         {
             questionNumber: 28,
-            difficultyScore: 14,
+            difficultyScore: 7,
             questionContent: "What is the capital of Canada?",
             updateA: "Toronto",
             updateB: "Vancouver",
@@ -282,7 +282,7 @@ const questionArray = [
         },
         {
             questionNumber: 29,
-            difficultyScore: 9,
+            difficultyScore: 6,
             questionContent: "What is the smallest prime number?",
             updateA: "0",
             updateB: "1",
@@ -301,6 +301,21 @@ const questionArray = [
             correctAnswer: "B"
         },
         ];
+
+// Going to make a tally function so that i can see how much of each difficulty is present 
+function difficultyTally(questionArray) {
+    const difficultyTally = {1: 0 , 2:0 , 3:0 , 4:0 ,5:0 ,6 :0 , 7:0 , 8:0 ,9:0 ,10:0 };
+
+    for (let i=0 ; i < questionArray.length; i++) {
+        const difficultyScore = questionArray[i].difficultyScore;
+        difficultyTally[difficultyScore]++;
+    }
+       return difficultyTally;
+    }
+
+
+console.log(difficultyTally(questionArray));
+
 let displayQuestion = document.getElementById("question-space");
 document.getElementById("A-text").addEventListener('click',function() {  selectA ('A') ; }
 );
