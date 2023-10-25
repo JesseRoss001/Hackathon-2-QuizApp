@@ -1983,7 +1983,7 @@ const questionArray = [
         }
     }
     
-    
+    function getNextQuestion() { 
     if (!easyQuestion1Chosen && filteredQuestions1.length > 0) {
         const randomIndex = Math.floor(Math.random() * filteredQuestions1.length);
         currentQuestion = filteredQuestions1[randomIndex];
@@ -1998,9 +1998,205 @@ const questionArray = [
 
        
         console.log("Randomly selected easy question:", currentQuestion.questionContent);
-    } else {
-        console.log("No questions with difficulty  ");
-    }
+    } else if  (easyQuestion1Chosen && filteredQuestions1.length > 0) {
+        const randomIndex = Math.floor(Math.random() * filteredQuestions1.length);
+        currentQuestion = filteredQuestions1[randomIndex];
+        easyQuestion2Chosen = true;
+
+        filteredQuestions1.splice(randomIndex,1);
+        displayQuestion.innerHTML = currentQuestion.questionContent;
+        displayA.innerHTML ="A: " +currentQuestion.updateA;
+        displayB.innerHTML ="B: " +currentQuestion.updateB;
+        displayC.innerHTML ="C: " +currentQuestion.updateC;
+        displayD.innerHTML ="D: " +currentQuestion.updateD;
+
+       
+        
+    } else if  (easyQuestion2Chosen && filteredQuestions1.length > 0) {
+        const randomIndex = Math.floor(Math.random() * filteredQuestions1.length);
+        currentQuestion = filteredQuestions1[randomIndex];
+        easyQuestion3Chosen = true;
+
+        filteredQuestions1.splice(randomIndex,1);
+        displayQuestion.innerHTML = currentQuestion.questionContent;
+        displayA.innerHTML ="A: " +currentQuestion.updateA;
+        displayB.innerHTML ="B: " +currentQuestion.updateB;
+        displayC.innerHTML ="C: " +currentQuestion.updateC;
+        displayD.innerHTML ="D: " +currentQuestion.updateD;
+
+       
+        
+    } else if  (easyQuestion3Chosen && filteredQuestions1.length > 0) {
+        const randomIndex = Math.floor(Math.random() * filteredQuestions1.length);
+        currentQuestion = filteredQuestions1[randomIndex];
+        easyQuestion4Chosen = true;
+
+        filteredQuestions1.splice(randomIndex,1);
+        displayQuestion.innerHTML = currentQuestion.questionContent;
+        displayA.innerHTML ="A: " +currentQuestion.updateA;
+        displayB.innerHTML ="B: " +currentQuestion.updateB;
+        displayC.innerHTML ="C: " +currentQuestion.updateC;
+        displayD.innerHTML ="D: " +currentQuestion.updateD;
+
+       
+        
+    } else if  (easyQuestion4Chosen && filteredQuestions1.length > 0) {
+        const randomIndex = Math.floor(Math.random() * filteredQuestions1.length);
+        currentQuestion = filteredQuestions1[randomIndex];
+        easyQuestion5Chosen = true;
+
+        filteredQuestions1.splice(randomIndex,1);
+        displayQuestion.innerHTML = currentQuestion.questionContent;
+        displayA.innerHTML ="A: " +currentQuestion.updateA;
+        displayB.innerHTML ="B: " +currentQuestion.updateB;
+        displayC.innerHTML ="C: " +currentQuestion.updateC;
+        displayD.innerHTML ="D: " +currentQuestion.updateD;
+
+       
+        
+    }  else if  (easyQuestion5Chosen && filteredQuestions2.length > 0) {
+        const randomIndex = Math.floor(Math.random() * filteredQuestions2.length);
+        currentQuestion = filteredQuestions1[randomIndex];
+        easyQuestion6Chosen = true;
+
+        filteredQuestions2.splice(randomIndex,1);
+        displayQuestion.innerHTML = currentQuestion.questionContent;
+        displayA.innerHTML ="A: " +currentQuestion.updateA;
+        displayB.innerHTML ="B: " +currentQuestion.updateB;
+        displayC.innerHTML ="C: " +currentQuestion.updateC;
+        displayD.innerHTML ="D: " +currentQuestion.updateD;
+
+       
+        
+    } else if  (easyQuestion6Chosen && filteredQuestions2.length > 0) {
+        const randomIndex = Math.floor(Math.random() * filteredQuestions2.length);
+        currentQuestion = filteredQuestions2[randomIndex];
+        easyQuestion7Chosen = true;
+
+        filteredQuestions2.splice(randomIndex,1);
+        displayQuestion.innerHTML = currentQuestion.questionContent;
+        displayA.innerHTML ="A: " +currentQuestion.updateA;
+        displayB.innerHTML ="B: " +currentQuestion.updateB;
+        displayC.innerHTML ="C: " +currentQuestion.updateC;
+        displayD.innerHTML ="D: " +currentQuestion.updateD;
+
+       
+        
+    }else if  (easyQuestion7Chosen && filteredQuestions2.length > 0) {
+        const randomIndex = Math.floor(Math.random() * filteredQuestions2.length);
+        currentQuestion = filteredQuestions2[randomIndex];
+        easyQuestion8Chosen = true;
+
+        filteredQuestions2.splice(randomIndex,1);
+        displayQuestion.innerHTML = currentQuestion.questionContent;
+        displayA.innerHTML ="A: " +currentQuestion.updateA;
+        displayB.innerHTML ="B: " +currentQuestion.updateB;
+        displayC.innerHTML ="C: " +currentQuestion.updateC;
+        displayD.innerHTML ="D: " +currentQuestion.updateD;
+
+       
+        
+    } else if  (easyQuestion8Chosen && filteredQuestions2.length > 0) {
+        const randomIndex = Math.floor(Math.random() * filteredQuestions2.length);
+        currentQuestion = filteredQuestions2[randomIndex];
+        easyQuestion9Chosen = true;
+
+        filteredQuestions2.splice(randomIndex,1);
+        displayQuestion.innerHTML = currentQuestion.questionContent;
+        displayA.innerHTML ="A: " +currentQuestion.updateA;
+        displayB.innerHTML ="B: " +currentQuestion.updateB;
+        displayC.innerHTML ="C: " +currentQuestion.updateC;
+        displayD.innerHTML ="D: " +currentQuestion.updateD;
+
+       
+        
+    }else if  (easyQuestion9Chosen && filteredQuestions2.length > 0) {
+        const randomIndex = Math.floor(Math.random() * filteredQuestions2.length);
+        currentQuestion = filteredQuestions2[randomIndex];
+        easyQuestion10Chosen = true;
+
+        filteredQuestions2.splice(randomIndex,1);
+        displayQuestion.innerHTML = currentQuestion.questionContent;
+        displayA.innerHTML ="A: " +currentQuestion.updateA;
+        displayB.innerHTML ="B: " +currentQuestion.updateB;
+        displayC.innerHTML ="C: " +currentQuestion.updateC;
+        displayD.innerHTML ="D: " +currentQuestion.updateD;
+
+       
+        
+    } else if  (easyQuestion10Chosen && filteredQuestions3.length > 0) {
+        const randomIndex = Math.floor(Math.random() * filteredQuestions3.length);
+        currentQuestion = filteredQuestions3[randomIndex];
+        easyQuestion11Chosen = true;
+
+        filteredQuestions3.splice(randomIndex,1);
+        displayQuestion.innerHTML = currentQuestion.questionContent;
+        displayA.innerHTML ="A: " +currentQuestion.updateA;
+        displayB.innerHTML ="B: " +currentQuestion.updateB;
+        displayC.innerHTML ="C: " +currentQuestion.updateC;
+        displayD.innerHTML ="D: " +currentQuestion.updateD;
+
+       
+        
+    }else if  (easyQuestion11Chosen && filteredQuestions3.length > 0) {
+        const randomIndex = Math.floor(Math.random() * filteredQuestions3.length);
+        currentQuestion = filteredQuestions3[randomIndex];
+        easyQuestion12Chosen = true;
+
+        filteredQuestions3.splice(randomIndex,1);
+        displayQuestion.innerHTML = currentQuestion.questionContent;
+        displayA.innerHTML ="A: " +currentQuestion.updateA;
+        displayB.innerHTML ="B: " +currentQuestion.updateB;
+        displayC.innerHTML ="C: " +currentQuestion.updateC;
+        displayD.innerHTML ="D: " +currentQuestion.updateD;
+
+       
+        
+    }else if  (easyQuestion12Chosen && filteredQuestions3.length > 0) {
+        const randomIndex = Math.floor(Math.random() * filteredQuestions3.length);
+        currentQuestion = filteredQuestions3[randomIndex];
+        easyQuestion13Chosen = true;
+
+        filteredQuestions3.splice(randomIndex,1);
+        displayQuestion.innerHTML = currentQuestion.questionContent;
+        displayA.innerHTML ="A: " +currentQuestion.updateA;
+        displayB.innerHTML ="B: " +currentQuestion.updateB;
+        displayC.innerHTML ="C: " +currentQuestion.updateC;
+        displayD.innerHTML ="D: " +currentQuestion.updateD;
+
+       
+        
+    }else if  (easyQuestion13Chosen && filteredQuestions4.length > 0) {
+        const randomIndex = Math.floor(Math.random() * filteredQuestions4.length);
+        currentQuestion = filteredQuestions4[randomIndex];
+        easyQuestion14Chosen = true;
+
+        filteredQuestions4.splice(randomIndex,1);
+        displayQuestion.innerHTML = currentQuestion.questionContent;
+        displayA.innerHTML ="A: " +currentQuestion.updateA;
+        displayB.innerHTML ="B: " +currentQuestion.updateB;
+        displayC.innerHTML ="C: " +currentQuestion.updateC;
+        displayD.innerHTML ="D: " +currentQuestion.updateD;
+
+       
+        
+    }else if  (easyQuestion14Chosen && filteredQuestions5.length > 0) {
+        const randomIndex = Math.floor(Math.random() * filteredQuestions5.length);
+        currentQuestion = filteredQuestions5[randomIndex];
+        easyQuestion15Chosen = true;
+
+        filteredQuestions5.splice(randomIndex,1);
+        displayQuestion.innerHTML = currentQuestion.questionContent;
+        displayA.innerHTML ="A: " +currentQuestion.updateA;
+        displayB.innerHTML ="B: " +currentQuestion.updateB;
+        displayC.innerHTML ="C: " +currentQuestion.updateC;
+        displayD.innerHTML ="D: " +currentQuestion.updateD;
+
+       
+        
+    } else {alert("Well Done ")}}
+
+
 
 
 
@@ -2038,9 +2234,13 @@ function selectD (selectedOption) {
 
 function checkAnswer(selectedOption) {
     if (currentQuestion && currentQuestion.correctAnswer === selectedOption) {
+        alert("Correct ! Moving to the next question .")
+        getNextQuestion();
         // go to the next question 
     } else {
         alert("You Failed");
     }
 }
+
+getNextQuestion();
 });
