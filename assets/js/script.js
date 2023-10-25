@@ -1891,7 +1891,30 @@ const questionArray = [
 
     let currentQuestion = null  ;
     let easyQuestion1Chosen = false;
-    let filteredQuestions1 = []; 
+    let easyQuestion2Chosen = false;
+    let easyQuestion3Chosen = false;
+    let easyQuestion4Chosen = false;
+    let easyQuestion5Chosen = false;
+    let easyQuestion6Chosen = false;
+    let easyQuestion7Chosen = false;
+    let easyQuestion8Chosen = false;
+    let easyQuestion9Chosen = false;
+    let easyQuestion10Chosen = false;
+    let easyQuestion11Chosen = false;
+    let easyQuestion12Chosen = false;
+    let easyQuestion13Chosen = false;
+    let easyQuestion14Chosen = false;
+    let easyQuestion15Chosen = false;
+    let filteredQuestions1 = [];
+    let filteredQuestions2 = [];
+    let filteredQuestions3 = [];
+    let filteredQuestions4 = [];
+    let filteredQuestions5 = [];
+    let filteredQuestions6 = [];  
+    let filteredQuestions7 = [];
+    let filteredQuestions8 = []; 
+    let filteredQuestions9 = [];
+    let filteredQuestions10 = []; 
     let displayQuestion = document.getElementById("question-space");
     let displayA =document.getElementById("A-text")
     let displayB =document.getElementById("B-text")
@@ -1904,11 +1927,69 @@ const questionArray = [
             filteredQuestions1.push(questionArray[i]);
         }
     }
+
+    for (let i = 0; i < questionArray.length; i++) {
+        if (questionArray[i].difficultyScore = 2) {
+            filteredQuestions2.push(questionArray[i]);
+        }
+    }
+
+    for (let i = 0; i < questionArray.length; i++) {
+        if (questionArray[i].difficultyScore = 3) {
+            filteredQuestions3.push(questionArray[i]);
+        }
+    }
+
+    for (let i = 0; i < questionArray.length; i++) {
+        if (questionArray[i].difficultyScore = 4) {
+            filteredQuestions4.push(questionArray[i]);
+        }
+    }
+
+    for (let i = 0; i < questionArray.length; i++) {
+        if (questionArray[i].difficultyScore = 5) {
+            filteredQuestions5.push(questionArray[i]);
+        }
+    }
+
+    for (let i = 0; i < questionArray.length; i++) {
+        if (questionArray[i].difficultyScore = 6) {
+            filteredQuestions6.push(questionArray[i]);
+        }
+    }
+
+    for (let i = 0; i < questionArray.length; i++) {
+        if (questionArray[i].difficultyScore = 7) {
+            filteredQuestions7.push(questionArray[i]);
+        }
+    }
+
+    for (let i = 0; i < questionArray.length; i++) {
+        if (questionArray[i].difficultyScore = 8) {
+            filteredQuestions8.push(questionArray[i]);
+        }
+    }
+
+    for (let i = 0; i < questionArray.length; i++) {
+        if (questionArray[i].difficultyScore = 9) {
+            filteredQuestions9.push(questionArray[i]);
+        }
+    }
+
+    
+    for (let i = 0; i < questionArray.length; i++) {
+        if (questionArray[i].difficultyScore = 10) {
+            filteredQuestions10.push(questionArray[i]);
+        }
+    }
+    
     
     if (!easyQuestion1Chosen && filteredQuestions1.length > 0) {
         const randomIndex = Math.floor(Math.random() * filteredQuestions1.length);
         currentQuestion = filteredQuestions1[randomIndex];
         easyQuestion1Chosen = true;
+
+        filteredQuestions1.splice(randomIndex,1);
         displayQuestion.innerHTML = currentQuestion.questionContent;
         displayA.innerHTML ="A: " +currentQuestion.updateA;
         displayB.innerHTML ="B: " +currentQuestion.updateB;
@@ -1918,8 +1999,11 @@ const questionArray = [
        
         console.log("Randomly selected easy question:", currentQuestion.questionContent);
     } else {
-        console.log("No questions with difficulty less than 1 found.");
+        console.log("No questions with difficulty  ");
     }
+
+
+
 
 
 
