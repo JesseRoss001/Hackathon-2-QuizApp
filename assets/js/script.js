@@ -1923,62 +1923,62 @@ const questionArray = [
     
     
     for (let i = 0; i < questionArray.length; i++) {
-        if (questionArray[i].difficultyScore < 2) {
+        if (questionArray[i].difficultyScore === 1 ) {
             filteredQuestions1.push(questionArray[i]);
         }
     }
 
     for (let i = 0; i < questionArray.length; i++) {
-        if (questionArray[i].difficultyScore = 2) {
+        if (questionArray[i].difficultyScore === 2) {
             filteredQuestions2.push(questionArray[i]);
         }
     }
 
     for (let i = 0; i < questionArray.length; i++) {
-        if (questionArray[i].difficultyScore = 3) {
+        if (questionArray[i].difficultyScore === 3) {
             filteredQuestions3.push(questionArray[i]);
         }
     }
 
     for (let i = 0; i < questionArray.length; i++) {
-        if (questionArray[i].difficultyScore = 4) {
+        if (questionArray[i].difficultyScore === 4) {
             filteredQuestions4.push(questionArray[i]);
         }
     }
 
     for (let i = 0; i < questionArray.length; i++) {
-        if (questionArray[i].difficultyScore = 5) {
+        if (questionArray[i].difficultyScore === 5) {
             filteredQuestions5.push(questionArray[i]);
         }
     }
 
     for (let i = 0; i < questionArray.length; i++) {
-        if (questionArray[i].difficultyScore = 6) {
+        if (questionArray[i].difficultyScore === 6) {
             filteredQuestions6.push(questionArray[i]);
         }
     }
 
     for (let i = 0; i < questionArray.length; i++) {
-        if (questionArray[i].difficultyScore = 7) {
+        if (questionArray[i].difficultyScore === 7) {
             filteredQuestions7.push(questionArray[i]);
         }
     }
 
     for (let i = 0; i < questionArray.length; i++) {
-        if (questionArray[i].difficultyScore = 8) {
+        if (questionArray[i].difficultyScore === 8) {
             filteredQuestions8.push(questionArray[i]);
         }
     }
 
     for (let i = 0; i < questionArray.length; i++) {
-        if (questionArray[i].difficultyScore = 9) {
+        if (questionArray[i].difficultyScore === 9) {
             filteredQuestions9.push(questionArray[i]);
         }
     }
 
     
     for (let i = 0; i < questionArray.length; i++) {
-        if (questionArray[i].difficultyScore = 10) {
+        if (questionArray[i].difficultyScore === 10) {
             filteredQuestions10.push(questionArray[i]);
         }
     }
@@ -2056,7 +2056,7 @@ const questionArray = [
         
     }  else if  (easyQuestion5Chosen && filteredQuestions2.length > 0) {
         const randomIndex = Math.floor(Math.random() * filteredQuestions2.length);
-        currentQuestion = filteredQuestions1[randomIndex];
+        currentQuestion = filteredQuestions2[randomIndex];
         easyQuestion6Chosen = true;
 
         filteredQuestions2.splice(randomIndex,1);
